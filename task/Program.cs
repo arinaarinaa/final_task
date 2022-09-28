@@ -24,3 +24,15 @@ void ArrayEditing(string [] massive, string [] newmassive)
         }
     }
 }
+ArrayEditing(massive, newmassive);
+Console.WriteLine();
+Console.WriteLine("Ваш новый массив - ");
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+PrintArray(newmassive);
