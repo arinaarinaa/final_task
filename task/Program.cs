@@ -10,3 +10,17 @@
     Console.WriteLine();
     return massive;
 }
+string [] massive = ArrayCreation();
+string [] newmassive = new string[massive.Length];
+void ArrayEditing(string [] massive, string [] newmassive)
+{
+    int n = 0;
+    for(int i = 0; i<massive.Length; i++)
+    {
+        if(massive[i].Length <=3)
+        {
+            newmassive[n] = massive[i];
+            n++;
+        }
+    }
+}
